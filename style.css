@@ -70,6 +70,14 @@ a {
     font-style: italic;
 }
 
+.transcision {
+    opacity: 0;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
+
 .flex-container {
     display: flex;
     border: 1px solid black;
@@ -103,7 +111,7 @@ a {
         font-size: 1em;
     }
 
-    ul{
+    ul {
         gap: 7px;
     }
 }
