@@ -1,19 +1,19 @@
 body {
     margin: 0;
     font-family: "Arial";
-    background: #7e876d;
+    background: #eee;
 }
 
 h1 {
     font-family: "calibri";
     font-size: 5em;
     font-weight: bold;
-    color: #d0c3db;
+    color: #504857;
     margin-left: 0%;
 }
 
 img {
-    height: 120px;
+    height: 180px;
     width: 220px;
 
 }
@@ -32,7 +32,11 @@ li {
 }
 
 footer {
-    color: white;
+    color: rgb(0, 0, 0);
+}
+
+.item-anime {
+    margin: 10px;
 }
 
 .container {
@@ -49,8 +53,8 @@ header {
 }
 
 a {
-    text-decoration: none;
-    color: #332266;
+    text-decoration: none !important;
+    color: #332266 !important;
     font-size: 1.5em;
     font-family: "calibri";
     font-weight: bold;
@@ -70,6 +74,13 @@ a {
     font-style: italic;
 }
 
+form {
+    width: 50%;
+}
+
+.formulario {
+    margin-left: 10px;
+}
 .transcision {
     opacity: 0;
     -webkit-transition: all 2s ease;
@@ -80,10 +91,9 @@ a {
 
 .flex-container {
     display: flex;
-    border: 1px solid black;
-    background: #ccc;
     padding: 20px;
     flex-flow: row wrap;
+    background-color:#bbb;
     width: 100%;
 }
 
