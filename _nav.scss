@@ -1,0 +1,38 @@
+$font2: "calibri";
+
+nav {
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 15px;
+    }
+
+    li {
+        float: right;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none !important;
+        color: #332266 !important;
+        font-size: 1.5em;
+        font-family: $font2;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: underline !important;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        a {
+            font-size: 1em;
+        }
+    
+        ul {
+            gap: 7px;
+        }
+    }
+}
