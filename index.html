@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <meta name="description" content="Pagina de Animes">
+    <meta name="keywords" content="Anime, Goku, Sebastien, Gon, Horisan">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,38 +15,33 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">
-                        Inicio
-                    </a>
-                </li>
-                <li>
-                    <a href="HTML/AnimeList.html">
-                        AnimeList
-                    </a>
-                </li>
-                <li>
-                    <a href="HTML/Recomendados.html">
-                        Recomendados
-                    </a>
-                </li>
-                <li>
-                    <a href="HTML/About.html">
-                        Nosotros
-                    </a>
-                </li>
-                <li>
-                    <a href="HTML/Contacts.html">
-                        Contacto
-                    </a>
-                </li>
-            </ul>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">AnimeList</a>
+                        <a class="nav-link" href="#">Recomendados</a>
+                        <a class="nav-link" href="#">Nosotros</a>
+                        <a class="nav-link" href="#">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <div class="main">
-        <h1>Inicio/Animes</h1>
+        <div class="busqueda">
+            <h1>Inicio/Animes</h1>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+        </div>
         <section class="flex-container">
             <div class="card text-center item-anime" style="width: 18rem;">
                 <img src="IMG/5f328772676bb1fcb7543d4060a5aa331481846453_main.jpg" class="card-img-top" alt="...">

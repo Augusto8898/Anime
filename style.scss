@@ -1,18 +1,20 @@
 @use 'caja';
 @use 'nav';
 
-$font-stack: Arial, sans-serif;
-$font2: "calibri";
+$fonts: (
+    font1: Arial, sans-serif,
+    font2: “calibri”
+);
 $box-size: 200px;
 
 body {
     margin: 0;
-    font-family: $font-stack;
+    font-family: map-get($font, font1);
     background: #eee;
 }
 
 h1 {
-    font-family: $font2;
+    font-family: map-get($font, font2);
     font-size: 5em;
     font-weight: bold;
     color: #504857;
@@ -60,8 +62,24 @@ form {
     display: flex;
     padding: 20px;
     flex-flow: row wrap;
-    background-color:#bbb;
+    background-color: #ccc;
     width: 100%;
+}
+
+.busqueda {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.busqueda>*:last-child {
+    align-self: center;
+    margin-left: auto;
+}
+
+.busqueda form {
+    width: 500px !important;
+    margin-right: 20px;
 }
 
 @media screen and (max-width: 480px) {

@@ -1,4 +1,7 @@
-$font2: "calibri";
+$fonts: (
+    font1: Arial, sans-serif,
+    font2: “calibri”
+);
 
 nav {
     ul {
@@ -16,7 +19,7 @@ nav {
         text-decoration: none !important;
         color: #332266 !important;
         font-size: 1.5em;
-        font-family: $font2;
+        font-family: map-get($font, font2);
         font-weight: bold;
 
         &:hover {
