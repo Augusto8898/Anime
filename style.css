@@ -1,8 +1,8 @@
+@charset "UTF-8";
 .card {
   border: 2px solid black;
   background-color: lightgray;
   text-align: center;
-  font-family: Arial, sans-serif;
   font-size: 23px;
   font-weight: 400;
   font-style: italic;
@@ -25,7 +25,6 @@ nav a {
   text-decoration: none !important;
   color: #332266 !important;
   font-size: 1.5em;
-  font-family: "calibri";
   font-weight: bold;
 }
 nav a:hover {
@@ -42,12 +41,12 @@ nav a:hover {
 }
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   background: #eee;
 }
 
 h1 {
-  font-family: "calibri";
+  font-family: “calibri”;
   font-size: 5em;
   font-weight: bold;
   color: #504857;
@@ -55,7 +54,19 @@ h1 {
 }
 
 footer {
-  color: rgb(0, 0, 0);
+  color: rgb(221, 221, 221);
+  background-color: #b3b2b2;
+  margin-top: 40px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .item-anime {
@@ -81,6 +92,11 @@ form {
 
 .formulario {
   margin-left: 10px;
+  margin-top: 24px;
+  padding: 5px;
+  width: 800px;
+  border: 4px solid rgb(192, 176, 176);
+  border-radius: 5px;
 }
 
 .transcision {
@@ -113,6 +129,35 @@ form {
 .busqueda form {
   width: 500px !important;
   margin-right: 20px;
+}
+
+.about {
+  line-height: 1.3em;
+}
+
+.marco {
+  height: 200px;
+  border: 4px solid rgb(192, 176, 176);
+  border-radius: 5px;
+  width: 800px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+table {
+  margin-top: 20px;
+  background-color: #bbc295;
+}
+
+.page-conteiner {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content {
+  padding-bottom: 2.5rem;
 }
 
 @media screen and (max-width: 480px) {

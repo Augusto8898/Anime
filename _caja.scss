@@ -1,5 +1,5 @@
 $fonts: (
-    font1: Arial, sans-serif,
+    font1: Arial,
     font2: “calibri”
 );
 
@@ -8,7 +8,7 @@ $fonts: (
     border: 2px solid black;
     background-color: lightgray;
     text-align: center;
-    font-family: map-get($font, font1);
+    font-family: map-get($fonts, font1);
     font-size: 23px;
     font-weight: 400;
     font-style: italic;
