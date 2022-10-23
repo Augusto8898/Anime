@@ -53,22 +53,6 @@ h1 {
   margin-left: 0%;
 }
 
-footer {
-  color: rgb(221, 221, 221);
-  background-color: #b3b2b2;
-  margin-top: 40px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
-}
-
-footer p {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
 .item-anime {
   margin: 10px;
 }
@@ -84,10 +68,6 @@ header {
   color: beige;
   display: flex !important;
   justify-content: flex-end;
-}
-
-form {
-  width: 50%;
 }
 
 .formulario {
@@ -118,17 +98,18 @@ form {
 .busqueda {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .busqueda > *:last-child {
   align-self: center;
-  margin-left: auto;
+  padding-bottom: 4vh;
 }
 
 .busqueda form {
   width: 500px !important;
-  margin-right: 20px;
 }
 
 .about {
@@ -140,10 +121,12 @@ form {
   border: 4px solid rgb(192, 176, 176);
   border-radius: 5px;
   width: 800px;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
 }
 
 table {
@@ -158,6 +141,31 @@ table {
 
 .content {
   padding-bottom: 2.5rem;
+}
+
+.tbrecomendados {
+  background-color: #a6abc0;
+}
+.tbrecomendados td {
+  text-decoration: underline;
+}
+
+.columna {
+  font-size: 1.5em;
+}
+
+footer {
+  width: 100%;
+}
+footer .section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .section form {
+  display: flex;
+  gap: 20px;
 }
 
 @media screen and (max-width: 480px) {
@@ -175,5 +183,8 @@ table {
     margin: auto;
     width: 50%;
     padding: 10px;
+  }
+  .busqueda form {
+    width: 6vh !important;
   }
 }/*# sourceMappingURL=style.css.map */
